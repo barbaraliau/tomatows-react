@@ -1,16 +1,26 @@
 var React = require('react');
+var AddTomatow = require('./AddTomatow');
+var Tomatows = require('./Tomatows');
+var Timer = require('./Timer');
+var TaskList = require('./TaskList');
+var Task = require('./Task');
 
 var App = React.createClass({
-	render: () {
+	render() {
 		return (
 			<div>
 				Hello World
+				<Tomatows />
+				<Timer />
+				<Timer />
+				<TaskList />
+
 			</div>
 		)
 	}
 });
 
 React.render(
-	<App />
+	<App />,
 	document.getElementById('app')
 	)
