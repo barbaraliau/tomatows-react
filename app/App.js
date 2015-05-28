@@ -7,14 +7,14 @@ var Task = require('./Task');
 
 var App = React.createClass({
 	render() {
-		return (
-			<div>
-				Hello World
-				<Tomatows />
-				<Timer />
-				<Timer />
-				<TaskList />
+		var styles = {
+		padding: '20px'
+		};
 
+		return (
+			<div style={styles} className="container-fluid">
+					<Timer startTime="10"/>
+				<TaskList />
 			</div>
 		)
 	}
